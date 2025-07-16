@@ -4,58 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body  class="h-screen">
-    <div class="grid grid-cols-7 grid-rows-10 h-full">
-        <div class="col-start-1 row-start-2 col-span-2 row-span-7 border 1px solid black ml-2 p-2 bg-orange-300 w-3/4">
-            <p>Mission....</p>
-        </div>
-        <div class="col-start-3 row-start-2">
-            <button class="px-10 py-5 bg-blue-300  border border-black rounded hover:bg-blue-400 hover:cursor-pointer">Class 1</button>
-        </div>
-        <div class="col-start-5 row-start-2">
-            <button class="px-10 py-5 bg-blue-300  border border-black rounded hover:bg-blue-400 hover:cursor-pointer">Class 2</button>
-        </div>
-        <div class="col-start-7 row-start-2">
-            <button class="px-10 py-5 bg-blue-300  border border-black rounded hover:bg-blue-400 hover:cursor-pointer">Class 3</button>
-        </div>
-        <div class="col-start-3 row-start-4">
-            <button class="px-10 py-5 bg-blue-300  border border-black rounded hover:bg-blue-400 hover:cursor-pointer">Class 4</button>
-        </div>
-        <div class="col-start-5 row-start-4">
-            <button class="px-10 py-5 bg-blue-300  border border-black rounded hover:bg-blue-400 hover:cursor-pointer">Class 5</button>
-        </div>
-        <div class="col-start-7 row-start-4">
-            <button class="px-10 py-5 bg-blue-300  border border-black rounded hover:bg-blue-400 hover:cursor-pointer">Class 6</button>
-        </div>
-        <div class="col-start-3 row-start-6">
-            <button class="px-10 py-5 bg-blue-300  border border-black rounded hover:bg-blue-400 hover:cursor-pointer">Class 7</button>
-        </div>
-        <div class="col-start-5 row-start-6">
-            <button class="px-10 py-5 bg-blue-300  border border-black rounded hover:bg-blue-400 hover:cursor-pointer">Class 8</button>
-        </div>
-        <div class="col-start-7 row-start-6">
-            <button class="px-10 py-5 bg-blue-300  border border-black rounded hover:bg-blue-400 hover:cursor-pointer">Class 9</button>
-        </div>
-        <div class="col-start-3 row-start-8">
-            <button class="px-10 py-5 bg-blue-300  border border-black rounded hover:bg-blue-400 hover:cursor-pointer">Class 10</button>
-        </div>
-        <div class="col-start-5 row-start-8">
-            <button class="px-10 py-5 bg-blue-300  border border-black rounded hover:bg-blue-400 hover:cursor-pointer">Class 11</button>
-        </div>
-        <div class="col-start-7 row-start-8">
-            <button class="px-10 py-5 bg-blue-300  border border-black rounded hover:bg-blue-400 hover:cursor-pointer">Class 12</button>
-        </div>
+<body class="min-h-screen bg-gray-100">
+  <div class="grid md:grid-cols-7 md:grid-rows-10 grid-cols-1 gap-4 p-4">
 
-    <!-- </div> -->
-    <div class="row-start-10 col-span-7 border border-black">
+    <div class="md:col-start-1 md:row-start-2 md:col-span-2 md:row-span-7 bg-orange-300 p-4 border border-black w-full">
+      <p>Mission....</p>
+    </div>
+
+    <div class=" md:col-start-3 md:col-span-5 md:row-start-2 md:row-span-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <button class="btn">Class 1</button>
+      <button class="btn">Class 2</button>
+      <button class="btn">Class 3</button>
+      <button class="btn">Class 4</button>
+      <button class="btn">Class 5</button>
+      <button class="btn">Class 6</button>
+      <button class="btn">Class 7</button>
+      <button class="btn">Class 8</button>
+      <button class="btn">Class 9</button>
+      <button class="btn">Class 10</button>
+      <button class="btn">Class 11</button>
+      <button class="btn">Class 12</button>
+    </div>
+
+    <div class="md:col-span-7 row-start-10  border-t border-black text-center p-4">
         <div class="col-start-3">
-            footer
+            <p>Footer Content</p>
+            <!-- &copy; 2025 -->
+        </div>
     </div>
-
-    </div>
-    </div>
-    
+  </div>
 </body>
 </html>

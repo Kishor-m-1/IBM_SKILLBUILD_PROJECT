@@ -1,0 +1,23 @@
+.btn{
+    border:1px solid #ccc;
+    background-color: rgba(255, 134, 68, 0.711);
+    border-radius:10px;
+}
+.btn:hover{
+    background-color: rgba(255, 134, 68, 0.911);
+    cursor:pointer;
+}
+@media (max-width: 640px) {
+    .btn {
+        width: 75%;
+        margin-bottom: 10px;
+        padding: 20px;
+        margin:auto;
+    }
+}
+@media (max-width: 760px) {
+    .btn {
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+}
