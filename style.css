@@ -7,6 +7,32 @@
     background-color: rgba(255, 134, 68, 0.911);
     cursor:pointer;
 }
+
+.landing_page{
+    background-image: url('./assets/landing_page.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin:0;
+}
+
+.logo_img{
+    width:150px;
+    height:150px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+.btn_landing{
+    background-color: #1e1e1eaa;
+    color: white;
+    border-radius: 10px;
+}
+.btn_landing:hover{
+    background-color: #1e1e1e;
+    cursor: pointer;
+}
+
 @media (max-width: 640px) {
     .btn {
         width: 75%;
@@ -20,4 +46,22 @@
         margin-bottom: 10px;
         padding: 20px;
     }
+}
+/* @media (max-width: 460px) {
+    .header1{
+        font-size: 10px;
+    }
+} */
+@media(max-width:761px){
+    .logo_img{
+            width:100px;
+            height:100px;
+            margin-bottom: 10px;
+    }
+    .header1{
+        margin-bottom: 90px;
+    }
+    /* h1{
+        font-size:15px;
+    } */
 }
