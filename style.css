@@ -1,13 +1,26 @@
 .btn{
     border:1px solid #ccc;
-    background-color: rgba(255, 134, 68, 0.711);
     border-radius:10px;
 }
-.btn:hover{
-    background-color: rgba(255, 134, 68, 0.911);
+.disabled{
+    background-color: #bab8b8;
+    text-decoration: line-through;
+}
+.disabled:hover{
+    background-color: #8c8b8b;
+    cursor: not-allowed;
+}
+.enabled{
+    background-color: #42a5f5;
+}
+.enabled:hover{
+    background-color: #2196f3;
     cursor:pointer;
 }
 
+.mission{
+    background-color: #90caf9
+}
 .landing_page{
     background-image: url('./assets/landing_page.png');
     background-size: cover;
@@ -31,6 +44,9 @@
 .btn_landing:hover{
     background-color: #1e1e1e;
     cursor: pointer;
+}
+.footer{
+    background-color: #bbdefb;
 }
 
 @media (max-width: 640px) {
@@ -64,4 +80,9 @@
     /* h1{
         font-size:15px;
     } */
+}
+@media(max-width:431px){
+    .footer{
+        gap: 15px;
+    }
 }

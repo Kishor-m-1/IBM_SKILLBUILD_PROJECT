@@ -8,33 +8,50 @@
     <title>Document</title>
 </head>
 <body class="min-h-screen bg-gray-100">
-  <div class="grid md:grid-cols-7 md:grid-rows-10 grid-cols-1 gap-4 p-4">
-
-    <div class="md:col-start-1 md:row-start-2 md:col-span-2 md:row-span-7 bg-orange-300 p-4 border border-black w-full">
-      <p>Mission....</p>
+  <div class="grid md:grid-cols-7 md:grid-rows-8  grid-cols-1 gap-4 p-4">
+    <div class="md:col-start-1 md:row-start-1 md:col-span-7 md:row-span-1 bg-blue-200 p-3 border border-black w-full rounded-lg flex flex-wrap justify-between items-center">
+      <a href="/landingpage.html" class="border border-black p-2 rounded-lg hover:bg-blue-300 left-0 "><- Back</a>
+      <h4 class="text-center w-9/10 text-2xl font-bold ">One Place. Unlimited Learning.</h4>
     </div>
 
-    <div class=" md:col-start-3 md:col-span-5 md:row-start-2 md:row-span-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <button class="btn">Class 1</button>
-      <button class="btn">Class 2</button>
-      <button class="btn">Class 3</button>
-      <button class="btn">Class 4</button>
-      <button class="btn">Class 5</button>
-      <button class="btn">Class 6</button>
-      <button class="btn">Class 7</button>
-      <button class="btn">Class 8</button>
-      <button class="btn">Class 9</button>
-      <button class="btn">Class 10</button>
-      <button class="btn">Class 11</button>
-      <button class="btn">Class 12</button>
+    <div class="mission md:col-start-1 md:row-start-2 md:col-span-2 md:row-span-7  p-4 border border-black w-full rounded-lg mb-10">
+      <p class="text-xl">
+        Millions of students, especially in rural or under-resourced areas, lack access to structured learning materials. Our website acts as a central hub of curated, free, and quality educational resources, especially open content like:
+      </p>
+  <ul class="list-disc pl-5 mt-4 text-lg">
+    <li>NCERT textbooks</li>
+    <li>Good Youtube videos</li>
+    <li>Toggle between English and regional languages (e.g., Hindi, Malayalam).</li>
+  </ul>
+    </div>
+    <div class=" buttons md:col-start-3 md:col-span-5 md:row-start-2 md:row-span-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+      <button class="btn disabled" onclick="clickFunc(this)">Class 1</button>
+      <button class="btn disabled" onclick="clickFunc(this)">Class 2</button>
+      <button class="btn disabled" onclick="clickFunc(this)">Class 3</button>
+      <button class="btn disabled" onclick="clickFunc(this)">Class 4</button>
+      <button class="btn disabled" onclick="clickFunc(this)">Class 5</button>
+      <button class="btn disabled" onclick="clickFunc(this)">Class 6</button>
+      <button class="btn disabled" onclick="clickFunc(this)">Class 7</button>
+      <button class="btn disabled" onclick="clickFunc(this)">Class 8</button>
+      <button class="btn disabled" onclick="clickFunc(this)">Class 9</button>
+      <button class="btn disabled" onclick="clickFunc(this)">Class 10</button>
+      <button class="btn enabled" onclick="clickFunc(this)">Class 11</button>
+      <button class="btn enabled" onclick="clickFunc(this)">Class 12</button>
     </div>
 
-    <div class="md:col-span-7 row-start-10  border-t border-black text-center p-4">
-        <div class="col-start-3">
-            <p>Footer Content</p>
-            <!-- &copy; 2025 -->
+    <div class="footer fixed flex flex-wrap bottom-0 left-0 right-0 bg-gray-200 p-4 justify-center gap-25">
+        <div class="flex flex-wrap ">
+            <p>About us</p>
         </div>
+        <div class="flex flex-wrap">
+            <p>&copy;2025</p>
+        </div>
+        <div class="flex flex-wrap">
+            <p>Contact</p>
+        </div>
+        
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
